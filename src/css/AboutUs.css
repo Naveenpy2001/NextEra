@@ -1,0 +1,81 @@
+.about_us {
+    padding: 0 0;
+    background-color: #f9f9f9;
+}
+
+.about_inner {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about_inner h2,
+.about_inner h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #4a4a4a;
+    text-align: left;
+    border-left: 4px solid green;
+    padding: 4px 15px;
+}
+
+.about_inner p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.team_profiles {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile_card {
+    max-width: 270px;
+    text-align: left;
+    border: 2px solid #c8c8c8;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 20px;
+    box-shadow: 0 0 6px 2px #e1e1e1;
+}
+
+.profile_image {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #8c8c8c;
+}
+
+.profile_position {
+    font-weight: bold;
+    color: #333;
+}
+
+.profile_bio {
+    font-size: 14px;
+    color: #777;
+}
+
+.about_benefits {
+    text-align: left;
+    margin: 20px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about_benefits li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
