@@ -36,7 +36,7 @@ const Services = () => {
               Temporibus, voluptas.
             </p>
           </a>
-          <a href="/AIpower" className="service-card card1">
+          <a href="/VirtualPowerPlants" className="service-card card1">
             <div className="go-corner">
               <span className="go-arrow">→</span>
             </div>
@@ -56,7 +56,7 @@ const Services = () => {
               doloribus.
             </p>
           </a>
-          <a href="/VirtualPowerPlants" className="service-card card1">
+          <a href="/AIpower" className="service-card card1">
             <div className="go-corner">
               <span className="go-arrow">→</span>
             </div>
