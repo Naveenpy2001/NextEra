@@ -1,7 +1,8 @@
 import React from "react";
 import '../../css/navbar.css';
 
-import Logo from '../../media/NexTera-logo.png'
+import Logo from '../../media/NexTera-logo.png';
+import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navbar = () => {
   const toggleMenu = () => {
@@ -33,19 +34,25 @@ const Navbar = () => {
               </div>
               <ul className="menu-main">
                 <li>
-                  <a href="/">Home</a>
+                  <a href="/"  className="navLinks">Home</a>
                 </li>
                 <li>
-                  <a href="/AboutUs">About Us</a>
+                  <a href="/AboutUs" className="navLinks">About Us</a>
+                </li>
+                <li className="servicesHover">
+                  <a href="#!" className="centerIcon">Services <RiArrowDropDownLine className="arrow" /></a> 
+                  <div className="popNav">
+                    <a href="/EVcharging" className="subNav">EV Charging Infrastructure</a>
+                    <a href="/AIpower" className="subNav">Virtual Power Plants</a>
+                    <a href="/Blockchain" className="subNav">Blockchain P2P Energy Trading</a>
+                    <a href="/VirtualPowerPlants" className="subNav">Al-Powered Predictive Analytics</a>
+                  </div>
                 </li>
                 <li>
-                  <a href="/Services">Services</a>
+                  <a href="/Support" className="navLinks">Support</a>
                 </li>
                 <li>
-                  <a href="/Support">Support</a>
-                </li>
-                <li>
-                  <a href="/ContactUs">Contact Us</a>
+                  <a href="/ContactUs" className="navLinks">Contact Us</a>
                 </li>
               </ul>
             </div>

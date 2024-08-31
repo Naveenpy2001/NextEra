@@ -1,28 +1,32 @@
 // App.js
 import React, { useState, useEffect } from "react";
 import "./ImageSlider.css";
-// import ImageSlider from "./imagesSlide";
-
+import Img1 from '../media/sateLite.jpg';
+import Img2 from '../media/ISRO.jpg';
+import Img3 from '../media/space.jpg';
+import Img4 from '../media/tower.jpg';
 
 const ImagesContain = () => {
-  const images = [
-    // Images
-    "https://www.einfochips.com/wp-content/uploads/2021/05/an-overview-of-electric-vehicle-charging-station-infrastructure-blog-fetaured-2.jpg",
-    "https://www.aranca.com/assets/uploads/blogs/article_vpp_banner.jpg",
-    "https://www.copelouzos.gr/wp-content/uploads/2019/08/symvatikespiges-1500x591.jpg",
-    "https://veradigm.com/img/resource-optimization-readiness-predictive-scheduler-feature.png",
+  const images = [Img1, Img2, Img3, Img4];
+  
+  // Add dummy texts corresponding to each image
+  const slideTexts = [
+    { text: "Explore Satellite Technology", link: "https://example.com/satellite" },
+    { text: "Discover ISRO's Achievements", link: "https://example.com/isro" },
+    { text: "Journey Through Space", link: "https://example.com/space" },
+    { text: "Learn About Communication Towers", link: "https://example.com/towers" }
   ];
   
   return (
     <div>
-      <ImageSlider images={images} />
+      <ImageSlider images={images} slideTexts={slideTexts} />
     </div>
   );
 };
 
 export default ImagesContain;
 
-const ImageSlider = ({ images }) => {
+const ImageSlider = ({ images, slideTexts }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextSlide = () => {
@@ -41,22 +45,32 @@ const ImageSlider = ({ images }) => {
     return () => {
       clearInterval(intervalId);
     };
-  });
+  }, []); // Add dependency array to avoid unnecessary re-renders
 
   return (
     <div className="image-slider">
-      <img
-        className="slider-image"
-        src={images[currentIndex]}
-        alt={`Slide ${currentIndex + 1}`}
-      />
-
-      <button className="prev-button" onClick={prevSlide}>
-        &lt;
-      </button>
-      <button className="next-button" onClick={nextSlide}>
-        &gt;
-      </button>
+      <div className="slider-content">
+        <h2>{slideTexts[currentIndex].text}</h2>
+        <button
+          className="explore-button"
+          onClick={() => window.location.href = slideTexts[currentIndex].link}
+        >
+          Explore
+        </button>
+      </div>
+      <div className="slider-images">
+        <img
+          className="slider-image"
+          src={images[currentIndex]}
+          alt={`Slide ${currentIndex + 1}`}
+        />
+        <button className="prev-button" onClick={prevSlide}>
+          &lt;
+        </button>
+        <button className="next-button" onClick={nextSlide}>
+          &gt;
+        </button>
+      </div>
     </div>
   );
 };

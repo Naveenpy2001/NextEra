@@ -26,7 +26,7 @@ const Services = () => {
       <div className="container">
         <h2 className="section-title">Our Services</h2>
         <div className="service-cards card">
-          <a href="/Services" className="service-card card1">
+          <a href="/EVcharging" className="service-card card1">
             <div className="go-corner">
               <span className="go-arrow">→</span>
             </div>
@@ -36,7 +36,7 @@ const Services = () => {
               Temporibus, voluptas.
             </p>
           </a>
-          <a href="/Services" className="service-card card1">
+          <a href="/AIpower" className="service-card card1">
             <div className="go-corner">
               <span className="go-arrow">→</span>
             </div>
@@ -46,7 +46,7 @@ const Services = () => {
               magnam.
             </p>
           </a>
-          <a href="/Services" className="service-card card1">
+          <a href="/Blockchain" className="service-card card1">
             <div className="go-corner">
               <span className="go-arrow">→</span>
             </div>
@@ -56,7 +56,7 @@ const Services = () => {
               doloribus.
             </p>
           </a>
-          <a href="/Services" className="service-card card1">
+          <a href="/VirtualPowerPlants" className="service-card card1">
             <div className="go-corner">
               <span className="go-arrow">→</span>
             </div>
@@ -65,17 +65,7 @@ const Services = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis, repellat?
             </p>
           </a>
-          {/* <a href="/Services" className="service-card card1">
-            <div className="go-corner">
-              <span className="go-arrow">→</span>
-            </div>
-            <h3>Telemedicine</h3>
-            <p>
-              Expand your reach with our telemedicine services. Offer remote
-              consultations, follow-ups, and more through a secure, integrated
-              platform.
-            </p>
-          </a> */}
+
         </div>
       </div>
     </section>

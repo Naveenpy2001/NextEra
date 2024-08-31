@@ -31,3 +31,79 @@
 .next-button {
   right: 10px;
 }
+
+
+.image-slider {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 500px; /* Adjust based on your image size */
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  background:linear-gradient(to right,#00000039,#00000019,#00000000);
+  color: white;
+  text-align: center;
+  z-index: 1;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.explore-button {
+  background-color: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slider-images {
+  position: relative;
+  flex-grow: 1;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  /* border-radius: 50%; */
+  z-index: 2;
+  display: none;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}

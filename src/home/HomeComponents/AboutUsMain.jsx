@@ -3,10 +3,14 @@ import "../../css/AboutUs.css"; // Assuming you'll add your custom styles in thi
 
 import Navbar from "./Nav";
 import Footer from "../Footer";
+
+import Oliver from '../../media/Oliver.jpeg'
+
 const AboutUs = () => {
   return (
     <>
       <Navbar />
+      <br />
       <section className="about_us">
         <div className="containerr">
           <div className="row-2">
@@ -41,39 +45,48 @@ const AboutUs = () => {
                 <div className="team_profiles">
                   <div className="profile_card">
                     <img
-                      src="https://static.vecteezy.com/system/resources/previews/021/548/095/non_2x/default-profile-picture-avatar-user-avatar-icon-person-icon-head-icon-profile-picture-icons-default-anonymous-user-male-and-female-businessman-photo-placeholder-social-network-avatar-portrait-free-vector.jpg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlie4MsQ9pJSSKY7DoEpxn3uBAq-rT7in1sA&s"
                       alt="Dr. Sarah Johnson"
                       className="profile_image"
                     />
-                    <h4> Sarah Johnson</h4>
-                    <p className="profile_position">Developer</p>
+                    
                     <p className="profile_bio">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dignissimos distinctio eum aspernatur adipisci sit!
+                    I need to oversee the project, keeping it on track with our goals and deadlines. I’ll coordinate between the team members, allocate resources, and handle communication with stakeholders. My role is to keep everything running smoothly and tackle any issues that come up.
                     </p>
+                    <div className="bottomLeft">
+                    <h4> - Jabivulla</h4>
+                    <p className="profile_position">Manager</p>
+                    </div>
                   </div>
                   <div className="profile_card">
                     <img
-                      src="https://static.vecteezy.com/system/resources/previews/021/548/095/non_2x/default-profile-picture-avatar-user-avatar-icon-person-icon-head-icon-profile-picture-icons-default-anonymous-user-male-and-female-businessman-photo-placeholder-social-network-avatar-portrait-free-vector.jpg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4tbfEljozkPT6V0ErExQdTz1gPubg3GdLGDaz3XV18yYU3Ix7IZBYYLYQSkj_tBEFW0I&usqp=CAU"
                       alt="John Smith"
                       className="profile_image"
                     />
-                    <h4>John Smith</h4>
-                    <p className="profile_position">Developer</p>
+                    
                     <p className="profile_bio">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolorem veniam, enim cupiditate minima ut?
+                    I’m responsible for designing and building the user interface of our application. This means focusing on how it looks and feels, using HTML, CSS, and JavaScript to make sure everything is responsive and engaging. My work ensures the application is both functional and visually appealing.
                     </p>
+                    <div className="bottomLeft">
+                    <h4> - Naveen</h4>
+                    <p className="profile_position">Frontend Developer</p>
+                    </div>
                   </div>
                   <div className="profile_card">
                     <img
-                      src="https://static.vecteezy.com/system/resources/previews/021/548/095/non_2x/default-profile-picture-avatar-user-avatar-icon-person-icon-head-icon-profile-picture-icons-default-anonymous-user-male-and-female-businessman-photo-placeholder-social-network-avatar-portrait-free-vector.jpg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4tbfEljozkPT6V0ErExQdTz1gPubg3GdLGDaz3XV18yYU3Ix7IZBYYLYQSkj_tBEFW0I&usqp=CAU"
                       alt="Emily Davis"
                       className="profile_image"
                     />
-                    <h4>Emily Davis</h4>
-                    <p className="profile_position">Developer</p>
+                    
                     <p className="profile_bio">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem aperiam dignissimos accusamus.
+                    I take care of the server-side logic and database management that users don’t see. I work with server-side languages and manage APIs and databases to keep the application running efficiently. My role is crucial for handling data and ensuring everything works seamlessly.
                     </p>
+                    <div className="bottomLeft">
+                    <h4> - Syed Basha</h4>
+                    <p className="profile_position">Backend Developer</p>
+                    </div>
                   </div>
                 </div>
                 <h3>Our Mission</h3>
@@ -95,21 +108,34 @@ const AboutUs = () => {
                 </p>
                 <h3>Why Choose Our NextEra?</h3>
                 <p className="about_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Officiis sunt molestiae rerum commodi ad incidunt nisi quasi
-                  mollitia, ipsum doloribus corporis consequatur ratione cum
-                  voluptatibus dicta omnis, deserunt maxime eligendi quas ab
-                  assumenda, a fugit dignissimos. Eos aliquid sit asperiores
-                  omnis officiis veniam suscipit. Sint dicta perspiciatis neque
-                  in sapiente optio laudantium, culpa quibusdam hic, assumenda
-                  ducimus reprehenderit mollitia ullam, fugiat debitis
-                  exercitationem quidem porro facere. Veniam reprehenderit
-                  asperiores pariatur fugiat quis et numquam hic eius ipsa
-                  explicabo sint dolore itaque inventore officia impedit
-                  expedita, nihil quibusdam, ab vel non. Quod laborum aut
-                  repudiandae! Dolorem consequuntur recusandae dicta praesentium
-                  quibusdam.
+                NextEra Tenergy is accelerating the green energy transition by building a global wireless electricity technology network that will power billions from space or earth without laying powerlines.
+
+ NextEra's state-of-the-art technology deliver the world's first wireless electricity transmission solution-intelligent, long range, high power, and point-to-multipoint.
+
+NextEra Tenergy offers a ubiquitous energy connectivity service. We can address a wider range of customer requirements and provide hybrid wireless electricity connectivity services where they are required worldwide, all with industry leading resilience.
+
+NextEra Tenergy is solving fundamental problems with wireless electricity transfer that will benefit our world.
                 </p>
+              </div>
+              <div className="profileContain">
+                <div className="containerProfile">
+                  <div className="photoContainer">
+                    <img src={Oliver} alt="Oliver" className="ProfileImg"/>
+                  </div>
+                  <div className="aboutContainer">
+                    <div className="headerInfo">
+                      <h2>Founder : </h2>
+                      <h2>
+                        <q style={{color:'green'}}> Oliver Tapuwa Mapunga </q>
+                      </h2>
+                    </div>
+                    <div className="textContainer">
+                      <p className="textAbout">
+                      I'm from Zimbabwean serial entrepreneur, sportsperson and dynamic leader with an extensive background in artificial intelligence, modern smart city technologies among others. He is the founder of NextEra Tenergy, a wireless electricity technology startup creating clean energy access to over 2.3 Billion people without access to power.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

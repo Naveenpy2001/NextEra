@@ -1,6 +1,10 @@
-/* Navbar.css */
-
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
 .header-main {
   width: 100%;
   background-color: #fff;
@@ -62,13 +66,81 @@
   align-items: center;
 }
 
+.servicesHover{
+  position: relative;
+}
+.centerIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+}
+.popNav{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transition: all .2s linear;
+  text-align: left;
+  transform: translateY(0);
+  transform: translateX(-50px);
 
-.menu-main li a {
+}
+.servicesHover:hover .popNav{
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  transform: translateY(0);
+  transform: translateX(-40px);
+  opacity: 1;
+  border: 1px solid #ccc;
+  animation: Hov .3s linear;
+}
+.subNav {
+  width: 280px;
+  display: flex;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+  padding: 14px 26px;
+  text-decoration: none;
+  color: #333;
+  transition: all .2s linear;
+  text-align: left;
+}
+.subNav:hover{
+  background-color: #efefef;
+}
+
+@keyframes Hov{
+  from{
+    transform: translateY(18px);
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+  transform: translateX(-40px);
+    opacity: 1;
+  }
+}
+
+.arrow{
+  font-size: 23px;
+  transition: all .2s linear;
+}
+.servicesHover:hover .arrow{
+  transform: rotate(180deg);
+}
+
+.menu-main li .navLinks {
   text-decoration: none;
   color: #333;
   padding: 5px 15px;
-  display: block;
+  display: flex;
   transition: color 0.3s ease;
+  align-items: center;
+  
 }
 
 .menu-main li a:hover {

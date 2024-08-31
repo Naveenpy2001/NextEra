@@ -22,7 +22,7 @@
 .about_inner p {
     font-size: 16px;
     line-height: 1.8;
-    color: #666;
+    color: #262626;
     margin-bottom: 20px;
 }
 
@@ -37,9 +37,9 @@
 }
 
 .profile_card {
-    max-width: 270px;
+    max-width: 340px;
     text-align: left;
-    border: 2px solid #c8c8c8;
+    border: 1px solid #119300;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -54,17 +54,24 @@
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 1px solid #8c8c8c;
+    border: 1px solid #027409;
 }
 
-.profile_position {
+.bottomLeft > .profile_position {
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
-
-.profile_bio {
-    font-size: 14px;
-    color: #777;
+.bottomLeft{
+    text-align: end;
+    width: 100%;
+}
+.bottomLeft > h4 {
+    text-align: right;
+    color: green;
+}
+.profile_card > .profile_bio {
+    font-size: 15px;
+    color: #2b2b2b;
 }
 
 .about_benefits {
@@ -76,6 +83,51 @@
 
 .about_benefits li {
     font-size: 16px;
-    color: #666;
+    color: #3d3d3d;
     margin-bottom: 10px;
+}
+.profileContain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    width: 100%;
+}
+.containerProfile{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00810f;
+    padding: 40px 20px;
+}
+.ProfileImg{
+    width: 100%;
+    padding: 0 40px;
+    border-radius: 50%;
+}
+.headerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+    .textContainer{
+        margin-top: 15px;
+    }
+.aboutContainer{
+    width: 100%;
+    padding: 10px 30px;
+
+}
+.photoContainer{
+    width: 40%;
+    /* background: #ccc; */
+    border-right: 2px solid #007313cc;
+
+
+}
+.textAbout{
+    line-height: 25px;
+    font-weight: 500;
+    color: #353535;
 }
