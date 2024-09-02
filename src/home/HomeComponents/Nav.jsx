@@ -43,9 +43,9 @@ const Navbar = () => {
                   <a href="#!" className="centerIcon">Services <RiArrowDropDownLine className="arrow" /></a> 
                   <div className="popNav">
                     <a href="/EVcharging" className="subNav">EV Charging Infrastructure</a>
-                    <a href="/AIpower" className="subNav">Virtual Power Plants</a>
+                    <a href="/VirtualPowerPlants" className="subNav">Virtual Power Plants</a>
                     <a href="/Blockchain" className="subNav">Blockchain P2P Energy Trading</a>
-                    <a href="/VirtualPowerPlants" className="subNav">Al-Powered Predictive Analytics</a>
+                    <a href="/AIpower" className="subNav">Al-Powered Predictive Analytics</a>
                   </div>
                 </li>
                 <li>
